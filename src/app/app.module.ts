@@ -8,6 +8,10 @@ import { DetailComponent } from './detail/detail.component';
 import { ListeComponent } from './liste/liste.component';
 import { AjoutComponent } from './ajout/ajout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './layout/header/header.component';
+import {
+  MatToolbarModule, MatButtonModule, MatIconModule
+ } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DetailComponent,
     ListeComponent,
     AjoutComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
