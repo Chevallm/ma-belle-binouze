@@ -1,3 +1,22 @@
-<p>
-  liste works!
-</p>
+<mat-card id="filtres">
+  <app-filtres bieres=bieres></app-filtres>
+</mat-card>
+<div id="bieres">
+  <div *ngFor="let biere of bieres">
+    <mat-card class="biere">
+      <p class="header">
+        <span class="nom">{{biere.nom}}</span>
+        <span classe="dateAcquisistion">{{biere.dateAcquisistion.format('DD/MM/YYYY')}}</span>
+      </p>
+      <img src={{biere.photo}} alt="Photo de la bouteille de bière {{biere.nom}}">
+      <dl>
+        <dt>Brasserie</dt>
+        <dd>{{biere.brasserie}}</dd>
+        <dt>Style</dt>
+        <dd>{{biere.style}}</dd>
+        <dt>Degré</dt>
+        <dd>{{biere.degre}}</dd>
+      </dl>
+    </mat-card>
+  </div>
+</div>

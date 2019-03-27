@@ -1,0 +1,21 @@
+#bieres {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-indent: 0;
+  justify-content: center;
+
+  margin-top: 2vh;
+}
+
+.biere {
+  margin-right: 2vw;
+  margin-top: 1vh;
+  max-width: 80vw;
+}
+
+.biere .header {
+  display: flex;
+  justify-content: space-between;
+}

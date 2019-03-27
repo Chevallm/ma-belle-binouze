@@ -1,0 +1,8 @@
+#filtres {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+
+  margin-top: 2vh;
+  padding: 1em 0;
+}

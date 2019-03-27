@@ -10,8 +10,10 @@ import { AjoutComponent } from './ajout/ajout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './layout/header/header.component';
 import {
-  MatToolbarModule, MatButtonModule, MatIconModule
+  MatToolbarModule, MatButtonModule, MatIconModule, MatGridListModule, MatCardModule, MatFormFieldModule, MatInputModule, MatDialogModule
  } from '@angular/material';
+import { FiltresComponent } from './filtres/filtres.component';
+import { DialogComponent } from './filtres/dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,11 @@ import {
     ListeComponent,
     AjoutComponent,
     HeaderComponent,
+    FiltresComponent,
+    DialogComponent
+  ],
+  entryComponents: [
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +36,12 @@ import {
 
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatGridListModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

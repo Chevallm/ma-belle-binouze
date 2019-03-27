@@ -14,5 +14,8 @@
             "kebab-case"
         ],
         "semicolon": false
+    },
+    "linterOptions": {
+      "exclude": [ "**/node_modules/**/*"]
     }
 }
